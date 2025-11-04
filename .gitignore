@@ -3,6 +3,7 @@ mysql/files
 postgres/data
 postgres/files
 airflow/dags/__pycache__
+airflow/dags/files
 airflow/logs
 airflow/plugins
 
