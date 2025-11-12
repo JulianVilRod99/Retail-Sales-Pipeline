@@ -3,7 +3,7 @@ import os
 import sys
 from dotenv import load_dotenv
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from helpers.db_helper import DatabaseHelper
 
 load_dotenv()
@@ -64,3 +64,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
