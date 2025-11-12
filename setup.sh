@@ -30,11 +30,11 @@ done
 echo "✅ PostgreSQL is up and running!"
 
 echo "Download the SQL file to configure the database, create it, and load the data into it"
-python ./scripts/mysql_config.py
+python ./airflow/dags/scripts/mysql_config.py
 
 echo "Load the schema.sql file to create the sales_data table into sales PostgreSQL Database"
-python ./scripts/postgres_config.py
+python ./airflow/dags/scripts/postgres_config.py
 
 echo "Querying the last rowid for the sales_data table in PostgreSQL and display 
 the records of the table sales in MySQL"
-python ./scripts/automation.py
+python ./airflow/dags/scripts/automation.py
